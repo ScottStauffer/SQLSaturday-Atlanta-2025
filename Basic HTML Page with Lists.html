@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+        <!--  
+            *
+            h1      span        p       span, p
+            .Region #set1       #set2   div
+
+            li:nth-child(2)
+            ul:nth-child(2)
+
+            div#set2 > table:nth-child(5) > * > tr:nth-child(2)
+
+        -->
+<html>
+    <head>
+        <title>CSS Selector Demo #1</title>
+        <style>
+            
+            .Region2, h1
+            {
+                Background: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Selectors For Styling | Scraping!</h1>
+
+        <div class="Region1">
+            <span>Just text within Region 1</span>
+            <div>
+                <ul>
+                    <li>Point #1</li>
+                    <li>Point #2</li>
+                    <li>Point #3</li>
+                    <li>Point #4</li>                
+                </ul>
+            </div>
+            <p>A short Paragraph</p>            
+        </div>
+
+        <div class="Region2">
+            <span>Just text within Region 2</span>
+            <ul>
+                <li>Point #1</li>
+                <li>Point #2</li>
+            </ul>
+            <p class="Region1" >A short Paragraph (with Region 1 class)</p>            
+        </div>
+    </body>
+</html>

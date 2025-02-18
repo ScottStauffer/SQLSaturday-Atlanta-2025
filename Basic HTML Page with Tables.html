@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selector Demo #2</title>
+            
+        <!--  
+            *
+            h1      span        p       span, p
+            Region  #set1       #set2
+
+            div#set2 th
+            div#set2 td
+            div#set2 table
+            div#set2 table, div#set2 th, div#set2 td
+div#set1 table, div#set1 th, div#set2 td
+            div#set2 > table:nth-child(5) > * > tr:nth-child(2)
+            TABLE:nth-child(1) > * > TR > :nth-child(1)
+        -->
+
+        <style>
+            * { Background: lightgray;
+                    color: blue;}
+
+            table, th, td {border: 1px solid;}
+
+            div#set1 table, div#set1 th, div#set2 td
+                {
+                    Background: orange;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Selectors For Styling | Scraping!</h1>
+
+        <div id="set1" class="Region">
+            <span>Just text within Region 1</span>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Country</th>
+                            <th>Continent</th>
+                            <th>Population</th>
+                        </tr>
+                        <tr>
+                            <td>United Kingdom</td>
+                            <td>Europe</td>
+                            <td>67,736,802</td>
+                        </tr>
+                        <tr>
+                            <td>Canada</td>
+                            <td>North America</td>
+                            <td>37,840,044</td>
+                        </tr>
+                        <tr>
+                            <td>Australia</td>
+                            <td>Oceania</td>
+                            <td>26,439,112</td>
+                        </tr>
+                    </tbody>    
+                </table>
+            </div>
+            <p>A short Paragraph</p>            
+        </div>
+        <span>Just text within Region 1</span>
+        <p></p>            
+        <p></p>            
+        <p></p>            
+        <div id="set2" class="Region">
+            <span>Just text within Region 2</span>
+            <p></p>            
+            <p></p>            
+            <p></p>            
+            <table class="Table2">
+                <tbody>
+                    <tr>
+                        <th>Country</th>
+                        <th>Continent</th>
+                        <th>Population</th>
+                    </tr>
+                    <tr>
+                        <td>United States</td>
+                        <td>North America</td>
+                        <td>339,996,564</td>
+                    </tr>
+                    <tr>
+                        <td>South Africa</td>
+                        <td>Africa</td>
+                        <td>60,414,495</td>
+                    </tr>
+                    <tr>
+                        <td>New Zealand</td>
+                        <td>Oceania</td>
+                        <td>5,228,100</td>
+                    </tr>
+                </tbody>    
+            </table>
+            <p></p>
+            <p></p>
+            <p>Duplicated Table:</p>            
+            <p></p>            
+            <table class="Table 3">
+                <tbody>
+                    <tr>
+                        <th>Country</th>
+                        <th>Continent</th>
+                        <th>Population</th>
+                    </tr>
+                    <tr>
+                        <td>United States</td>
+                        <td>North America</td>
+                        <td>339,996,564</td>
+                    </tr>
+                    <tr>
+                        <td>South Africa</td>
+                        <td>Africa</td>
+                        <td>60,414,495</td>
+                    </tr>
+                    <tr>
+                        <td>New Zealand</td>
+                        <td>Oceania</td>
+                        <td>5,228,100</td>
+                    </tr>
+                </tbody>    
+            </table>
+            <p>A short Paragraph</p>            
+        </div>
+    </body>
+</html>
